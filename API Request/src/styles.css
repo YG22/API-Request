@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Button {
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+#divTitle {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 30px;
+  min-width: 80vw;
+}
+
+#divTitle:hover {
+  background: #f1f1f1;
+  color: #3f51b5;
+  border: 3px solid #3f51b5;
+  text-transform: uppercase;
+  font-family: Audiowide;
+  cursor: pointer;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: rotate(5deg);
+  /* transform: rotateY(25deg); */
+}
+#divTitle:hover:nth-child(2n) {
+  background: #f1f1f1;
+  color: #3f51b5;
+  border: 3px solid #3f51b5;
+  text-transform: uppercase;
+  font-family: Audiowide;
+  cursor: pointer;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: rotate(-5deg);
+}
+/* #divTitle:hover:nth-child(3n) {
+  background: #f1f1f1;
+  color: #3f51b5;
+  border: 3px solid #3f51b5;
+  text-transform: uppercase;
+  font-family: Audiowide;
+  cursor: pointer;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: rotateY(25deg);
+} */
+
+#disabledDivTitle {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 30px;
+  min-width: 80vw;
+  text-decoration: line-through;
+  opacity: 0.5;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
